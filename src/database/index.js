@@ -1,3 +1,4 @@
 import connection from './config/index.js';
+import { getUserByEmailQuery, getUserByUsernameQuery, registerQuery } from './queries/index.js';
 
-export default connection;
+export { connection, getUserByEmailQuery, getUserByUsernameQuery, registerQuery };

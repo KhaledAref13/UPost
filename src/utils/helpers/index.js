@@ -1,3 +1,4 @@
 import CustomError from './CustomError.js';
+import { hashPassword, comparePassword } from './bcrypt.js';
 
-export default CustomError;
+export { CustomError, hashPassword, comparePassword };

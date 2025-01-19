@@ -1,4 +1,5 @@
-import { Pool } from 'pg';
+import pg from 'pg';
+const { Pool } = pg;
 
 import { DB_URL, DB_DEV_URL, NODE_ENV } from '../../config/index.js';
 
