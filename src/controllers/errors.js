@@ -1,6 +1,6 @@
 import joi from 'joi';
 import jwt from 'jsonwebtoken';
-import CustomError from '../utils/index.js';
+import { CustomError } from '../utils/index.js';
 
 const { ValidationError } = joi;
 const { JsonWebTokenError } = jwt;
@@ -25,13 +25,15 @@ const serverError = (err, req, res, next) => {
     });
   }
   if (err instanceof JsonWebTokenError) {
-    return res.status(401).json({
-      error: true,
-      data: {
-        msg: 'Invalid token',
-        errors: err.message,
-      },
-    });
+    return res
+      .status(401)
+      .clearCookie('token')
+      .json({
+        error: true,
+        data: {
+          msg: 'Invalid token',
+        },
+      });
   }
   if (err instanceof CustomError) {
     return res.status(err.status).json({
