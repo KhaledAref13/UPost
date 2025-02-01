@@ -1,4 +1,23 @@
 import connection from './config/index.js';
-import { getUserByEmailQuery, getUserByUsernameQuery, registerQuery } from './queries/index.js';
+import {
+  getUserByEmailQuery,
+  getUserByUsernameQuery,
+  registerQuery,
+  createPostQuery,
+  getPostByIdQuery,
+  deletePostQuery,
+  getAllPostsQuery,
+  getUserPostsQuery,
+} from './queries/index.js';
 
-export { connection, getUserByEmailQuery, getUserByUsernameQuery, registerQuery };
+export {
+  connection,
+  getUserByEmailQuery,
+  getUserByUsernameQuery,
+  registerQuery,
+  createPostQuery,
+  getPostByIdQuery,
+  deletePostQuery,
+  getAllPostsQuery,
+  getUserPostsQuery,
+};
