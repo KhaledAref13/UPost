@@ -8,6 +8,9 @@ import {
   deletePostQuery,
   getAllPostsQuery,
   getUserPostsQuery,
+  createCommentQuery,
+  getCommentByIdQuery,
+  deleteCommentQuery,
 } from './queries/index.js';
 
 export {
@@ -20,4 +23,7 @@ export {
   deletePostQuery,
   getAllPostsQuery,
   getUserPostsQuery,
+  createCommentQuery,
+  getCommentByIdQuery,
+  deleteCommentQuery,
 };

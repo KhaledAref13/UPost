@@ -4,6 +4,8 @@ import {
   loginSchema,
   createPostSchema,
   deletePostSchema,
+  createCommentSchema,
+  checkIdSchema,
 } from './validations/index.js';
 import { signToken, verifyToken } from './jwt/index.js';
 
@@ -17,4 +19,6 @@ export {
   verifyToken,
   createPostSchema,
   deletePostSchema,
+  createCommentSchema,
+  checkIdSchema,
 };

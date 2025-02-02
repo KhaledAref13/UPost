@@ -6,7 +6,7 @@ import {
   getAllPostsController,
   getUserPostsController,
 } from './posts.js';
-
+import { createCommentController, deleteCommentController } from './comments.js';
 export {
   clientError,
   serverError,
@@ -17,4 +17,6 @@ export {
   deletePostController,
   getAllPostsController,
   getUserPostsController,
+  createCommentController,
+  deleteCommentController,
 };
