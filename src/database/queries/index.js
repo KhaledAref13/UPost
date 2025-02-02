@@ -6,6 +6,9 @@ import getPostByIdQuery from './getPostByIdQuery.js';
 import deletePostQuery from './deletePostQuery.js';
 import getAllPostsQuery from './getAllPostsQuery.js';
 import getUserPostsQuery from './getUserPostsQuery.js';
+import createCommentQuery from './createCommentQuery.js';
+import getCommentByIdQuery from './getCommentByIdQuery.js';
+import deleteCommentQuery from './deleteCommentQuery.js';
 
 export {
   getUserByEmailQuery,
@@ -15,5 +18,8 @@ export {
   getPostByIdQuery,
   deletePostQuery,
   getAllPostsQuery,
-  getUserPostsQuery
+  getUserPostsQuery,
+  createCommentQuery,
+  getCommentByIdQuery,
+  deleteCommentQuery,
 };
