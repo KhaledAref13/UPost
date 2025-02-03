@@ -7,6 +7,8 @@ import {
   getUserPostsController,
 } from './posts.js';
 import { createCommentController, deleteCommentController } from './comments.js';
+import getUserProfileController from './profile.js';
+import likesController from './likes.js';
 export {
   clientError,
   serverError,
@@ -19,4 +21,6 @@ export {
   getUserPostsController,
   createCommentController,
   deleteCommentController,
+  getUserProfileController,
+  likesController,
 };

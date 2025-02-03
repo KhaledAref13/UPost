@@ -11,6 +11,9 @@ import {
   createCommentQuery,
   getCommentByIdQuery,
   deleteCommentQuery,
+  checkLikeQuery,
+  addLikeQuery,
+  removeLikeQuery,
 } from './queries/index.js';
 
 export {
@@ -26,4 +29,7 @@ export {
   createCommentQuery,
   getCommentByIdQuery,
   deleteCommentQuery,
+  checkLikeQuery,
+  addLikeQuery,
+  removeLikeQuery,
 };
