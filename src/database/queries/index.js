@@ -9,6 +9,9 @@ import getUserPostsQuery from './getUserPostsQuery.js';
 import createCommentQuery from './createCommentQuery.js';
 import getCommentByIdQuery from './getCommentByIdQuery.js';
 import deleteCommentQuery from './deleteCommentQuery.js';
+import checkLikeQuery from './checkLikeQuery.js';
+import addLikeQuery from './addLikeQuery.js';
+import removeLikeQuery from './removeLikeQuery.js';
 
 export {
   getUserByEmailQuery,
@@ -22,4 +25,7 @@ export {
   createCommentQuery,
   getCommentByIdQuery,
   deleteCommentQuery,
+  checkLikeQuery,
+  addLikeQuery,
+  removeLikeQuery,
 };
