@@ -30,7 +30,12 @@ const registerController = async (req, res, next) => {
     });
     res
       .status(200)
-      .cookie('token', token, { maxAge: 24 * 60 * 60 * 1000 })
+      .cookie('token', token, {
+        httpOnly: false,
+        secure: false,
+        sameSite: 'lax',
+        maxAge: 24 * 60 * 60 * 1000,
+      })
       .json({
         error: false,
         data: {
@@ -73,7 +78,12 @@ const loginController = async (req, res, next) => {
     );
     res
       .status(200)
-      .cookie('token', token, { maxAge: 24 * 60 * 60 * 1000 })
+      .cookie('token', token, {
+        httpOnly: false,
+        secure: false,
+        sameSite: 'lax',
+        maxAge: 24 * 60 * 60 * 1000,
+      })
       .json({
         error: false,
         data: {
