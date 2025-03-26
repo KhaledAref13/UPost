@@ -1,9 +1,15 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Outlet } from 'react-router-dom';
+import Layout from '../components';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div className="text-3xl font-bold underline">Hello world!</div>,
+    element: (
+      <Layout>
+        <Outlet />
+      </Layout>
+    ),
+    children: [{ path: '/login', element: <h1>Login Page</h1> }],
   },
 ]);
 
